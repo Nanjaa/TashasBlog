@@ -17,6 +17,13 @@
 /* #Site Styles
 ================================================== */
 
+.recipeTitle {
+	background-color: #35adbb;
+	opacity: 0.7;
+	margin-bottom: -100px;
+	padding: 15px;
+}
+
 /* #Page Styles
 ================================================== */
 
