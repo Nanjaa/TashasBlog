@@ -18,10 +18,16 @@
 						<?php if(in_category( 'recipes' )) {
 								echo '<a href="'; the_permalink(); echo '" title="'; the_title_attribute(); echo '">'; the_title('<h3 class="postTitle recipeTitle">', '</h3>'); echo '</a>';
 								the_post_thumbnail();
-						}
+							}
+							// Adventures
 							else if(in_category( 'adventures')) {
 								echo '<a href="'; the_permalink(); echo '" title="'; the_title_attribute(); echo '">'; the_title('<h3 class="postTitle">', '</h3>'); echo '</a>';
 								the_content();
+							}
+							// DIY
+							else if(in_category( 'diy' )) {
+								echo '<a href="'; the_permalink(); echo '" title="'; the_title_attribute(); echo '">'; the_title('<h3 class="postTitle recipeTitle">', '</h3>'); echo '</a>';
+								the_post_thumbnail();
 							}
 						?>
 					</div>
