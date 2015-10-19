@@ -13,10 +13,17 @@
 												
 				<article id="post-<?php the_ID(); ?>">
 					<div class="title">
-						<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title('<h3 class="recipeTitle">', '</h3>'); ?></a>  <!--Post titles-->
-						<?php if(has_post_thumbnail()) {
-							the_post_thumbnail();
-						}; ?>
+						
+						<!-- Recipes (Just picture and title) -->
+						<?php if(in_category( 'recipes' )) {
+								echo '<a href="'; the_permalink(); echo '" title="'; the_title_attribute(); echo '">'; the_title('<h3 class="postTitle recipeTitle">', '</h3>'); echo '</a>';
+								the_post_thumbnail();
+						}
+							else if(in_category( 'adventures')) {
+								echo '<a href="'; the_permalink(); echo '" title="'; the_title_attribute(); echo '">'; the_title('<h3 class="postTitle">', '</h3>'); echo '</a>';
+								the_content();
+							}
+						?>
 					</div>
 				</article>
 												

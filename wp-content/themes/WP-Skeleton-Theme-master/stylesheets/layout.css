@@ -17,11 +17,14 @@
 /* #Site Styles
 ================================================== */
 
-.recipeTitle {
+.postTitle {
 	background-color: #35adbb;
 	opacity: 0.7;
-	margin-bottom: -100px;
 	padding: 15px;
+}
+.recipeTitle {
+	margin-bottom: -100px;
+	margin-top: 50px;
 }
 
 /* #Page Styles
