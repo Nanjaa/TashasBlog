@@ -35,8 +35,16 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>/images/apple-touch-icon-114x114.png">
 
-	<!-- Stylesheets
+	<!-- Fonts
 	================================================== -->
+
+	<link href='https://fonts.googleapis.com/css?family=Give+You+Glory' rel='stylesheet' type='text/css'>
+
+	<!-- css
+	================================================== -->
+
+	<link rel="stylesheet" href="css/fontello.css">
+
 <?php wp_head(); ?>
 </head>
 

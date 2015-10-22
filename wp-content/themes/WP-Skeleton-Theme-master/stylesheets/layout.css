@@ -35,6 +35,12 @@
 #side {
 	float: right;
 }
+h1 {
+	font-family: 'Give You Glory', cursive;
+}
+a {
+	text-decoration: none;
+}
 
 /* #Page Styles
 ================================================== */
