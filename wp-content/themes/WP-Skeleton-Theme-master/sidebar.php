@@ -8,7 +8,7 @@
 		<div class="sidebar"> <!--  the Sidebar -->
 			<!-- Social Media -->
 			<div class="social">
-				<p>Keep in Touch</p>
+				<p id="test">Keep in Touch</p>
 				<i class="icon-facebook-circled"></i>
 			</div>
 			<!-- all the rest -->

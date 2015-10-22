@@ -45,7 +45,14 @@
 
 	<link rel="stylesheet" href="css/fontello.css">
 
+<?php wp_enqueue_script("jquery"); ?>
 <?php wp_head(); ?>
+
+	<!-- JS
+	================================================== -->
+
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/script.js"></script>
+	
 </head>
 
 <body <?php body_class(); ?>><!-- the Body  -->
