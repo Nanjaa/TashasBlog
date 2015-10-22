@@ -9,7 +9,7 @@
 			<!-- Social Media -->
 			<div class="social">
 				<p>Keep in Touch</p>
-				<p>social media icons go here</p>
+				<i class="icon-facebook-circled"></i>
 			</div>
 			<!-- all the rest -->
 			<?php if ( is_active_sidebar( 'right-sidebar' ) ) : ?> <?php dynamic_sidebar( 'right-sidebar' ); ?>
