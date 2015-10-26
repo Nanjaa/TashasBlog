@@ -40,11 +40,12 @@
 
 	<link href='https://fonts.googleapis.com/css?family=Give+You+Glory' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>
 
 	<!-- css
 	================================================== -->
 
-	<link rel="stylesheet" href="css/fontello.css">
+	<link rel="stylesheet" href="/css/fontello.css">
 
 <?php wp_enqueue_script("jquery"); ?>
 <?php wp_head(); ?>

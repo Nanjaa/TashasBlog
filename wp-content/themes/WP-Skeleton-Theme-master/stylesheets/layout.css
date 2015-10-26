@@ -20,8 +20,11 @@
 div, article {
 	box-sizing: border-box;
 }
-p {
+p, .menuLink {
 	font-family: 'Open Sans', sans-serif;
+}
+.center {
+	text-align: center;
 }
 .main {
 	position: relative;
@@ -66,14 +69,17 @@ p {
 	float: right;
 }
 h1 {
-	font-family: 'Give You Glory', cursive;
+	font-family: 'Fredericka the Great', cursive;
 	color: #2d99a6;
+}
+h2, h3 {
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 a {
 	text-decoration: none;
 }
 .logo {
-	text-align: center;
+	display: inline-block;
 }
 
 /* #Page Styles
