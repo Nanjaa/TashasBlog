@@ -9,11 +9,13 @@
 			<!-- Social Media -->
 			<div class="social">
 				<p id="test">Keep in Touch</p>
-				<i class="icon-facebook-circled"></i>
+				<i class="socialIcon icon-facebook"></i>
+				<i class="socialIcon icon-twitter"></i>
+				<i class="socialIcon icon-instagram"></i>
+				<i class="socialIcon icon-mail-circled"></i>
 			</div>
 			<!-- all the rest -->
 			<?php if ( is_active_sidebar( 'right-sidebar' ) ) : ?> <?php dynamic_sidebar( 'right-sidebar' ); ?>
-			<p> Hello world!</p>
 			<?php else : ?><p>You need to drag a widget into your sidebar in the WordPress Admin</p>
 			<?php endif; ?>
 		</div>

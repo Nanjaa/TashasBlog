@@ -45,7 +45,7 @@
 	<!-- css
 	================================================== -->
 
-	<link rel="stylesheet" href="/css/fontello.css">
+	<link rel="stylesheet" href="/wp-content/themes/WP-Skeleton-Theme-master/css/fontello.css">
 
 <?php wp_enqueue_script("jquery"); ?>
 <?php wp_head(); ?>

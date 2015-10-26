@@ -23,6 +23,9 @@ div, article {
 p, .menuLink {
 	font-family: 'Open Sans', sans-serif;
 }
+i {
+	font-family: 'fontello';
+}
 .center {
 	text-align: center;
 }
@@ -80,6 +83,14 @@ a {
 }
 .logo {
 	display: inline-block;
+}
+.socialIcon {
+	color: #2d99a6;
+	font-size: 35px;
+	cursor: pointer;
+}
+.socialIcon:hover {
+	color: #35adbb;
 }
 
 /* #Page Styles
