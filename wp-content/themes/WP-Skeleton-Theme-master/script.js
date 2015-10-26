@@ -2,14 +2,10 @@ var $j = jQuery.noConflict();
 
 $j(document).ready(function() {
 
-	$j('#test').on('click', function() {
-		console.log('it worked');
+	// Hover over the post titles, and have the 
+	$j('.postTitle').on('mouseenter', function() {
+		console.log('hello there');
 	});
-	
-	console.log('hello 3');	
-	
-	$j('.recipeTitle').hover(function() {
-		console.log('yo yo yo');
-	});	
+
 });
 
