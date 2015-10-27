@@ -12,6 +12,7 @@
 				<?php while ( have_posts() ) : the_post(); ?> <!--  the Loop -->
 												
 				<article id="post-<?php the_ID(); ?>">
+					<?php echo get_the_date(); ?>
 					<div class="title">
 						
 						<!-- Recipes (Just picture and title) -->
@@ -30,6 +31,9 @@
 								the_post_thumbnail();
 							}
 						?>
+						<div class="test">
+							<?php echo '<a class="readMore" href="'; the_permalink(); echo '" title="'; the_title_attribute(); echo '">Read More...</a>'; ?>
+						</div>
 					</div>
 				</article>
 												

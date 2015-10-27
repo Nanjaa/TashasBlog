@@ -132,6 +132,14 @@ a {
 #searchsubmit {
 	background-color: 
 }
+.test, .readMore {
+	color: #35adbb !important;
+	text-align: right;
+	margin-bottom: 25px;
+}
+.readMore:hover {
+	color: #2d99a6 !important;
+}
 
 /* #Page Styles
 ================================================== */
