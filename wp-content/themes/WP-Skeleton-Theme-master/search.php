@@ -24,7 +24,6 @@ get_template_part( 'menu', 'index' ); //the  menu + logo/site title ?>
                           <h2 class="entry-title"><?php _e( 'Nothing Found', 'mb' ); ?></h2>
                           <div class="entry-content">
                               <p><?php _e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'twentyten' ); ?></p>
-                              <?php get_search_form(); ?>
                           </div><!-- .entry-content -->
                       </div><!-- #post-0 -->
               <?php endif; ?>

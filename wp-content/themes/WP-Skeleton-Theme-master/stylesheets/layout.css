@@ -17,6 +17,9 @@
 /* #Site Styles
 ================================================== */
 
+body {
+	background-color: #fefefe;
+}
 div, article {
 	box-sizing: border-box;
 }
@@ -50,7 +53,7 @@ i {
 	transition: all 1s linear;
 }
 .postTitle:hover {
-	background-color: pink;
+	background-color: #2d99a6;
 }
 .recipeTitle:hover {
 	margin-bottom: 0px;
@@ -84,6 +87,17 @@ a {
 .logo {
 	display: inline-block;
 }
+.social {
+	text-align: center;
+	border: 3px double #35adbb;
+	padding: 15px;
+	margin-bottom: 25px;
+}
+.social p {
+	font-size: 35px;
+	font-family: "Open Sans Condensed",sans-serif;
+	color: #35adbb;
+}
 .socialIcon {
 	color: #2d99a6;
 	font-size: 35px;
@@ -91,6 +105,32 @@ a {
 }
 .socialIcon:hover {
 	color: #35adbb;
+}
+#search-2 {
+	padding-bottom: 5;
+	border-bottom: 1px solid #2d99a6;
+}
+#recent-posts-2 h3, #archives-2 h3 {
+	color: #35adbb;
+}
+#recent-posts-2 {
+	margin-top: 25px;
+}
+#s, #searchsubmit {
+	float: left;
+	box-sizing: border-box;
+}
+#searchsubmit {
+	background-color: #2d99a6;
+	border: none;
+	color: white;
+	height: 30px;
+	border-radius: 0 2px 2px 0;
+	cursor: pointer;
+	width: 25%;
+}
+#searchsubmit {
+	background-color: 
 }
 
 /* #Page Styles
