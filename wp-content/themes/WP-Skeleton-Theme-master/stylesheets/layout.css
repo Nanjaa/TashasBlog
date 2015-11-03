@@ -29,6 +29,10 @@ p, .menuLink {
 i {
 	font-family: 'fontello';
 }
+article {
+	border-bottom: 2px dotted #ddd;
+	margin-bottom: 25px;
+}
 .center {
 	text-align: center;
 }

@@ -12,25 +12,12 @@
 				<?php while ( have_posts() ) : the_post(); ?> <!--  the Loop -->
 												
 				<article id="post-<?php the_ID(); ?>">
-					<?php echo get_the_date(); ?>
+					<p><?php echo get_the_date(); ?></p>
 					<div class="title">
-						
-						<!-- Recipes (Just picture and title) -->
-						<?php if(in_category( 'recipes' )) {
-								echo '<a href="'; the_permalink(); echo '" title="'; the_title_attribute(); echo '">'; the_title('<h3 class="postTitle recipeTitle">', '</h3>'); echo '</a>';
-								the_post_thumbnail();
-							}
-							// Adventures
-							else if(in_category( 'adventures')) {
-								echo '<a href="'; the_permalink(); echo '" title="'; the_title_attribute(); echo '">'; the_title('<h3 class="postTitle">', '</h3>'); echo '</a>';
-								the_content();
-							}
-							// DIY
-							else if(in_category( 'diy' )) {
-								echo '<a href="'; the_permalink(); echo '" title="'; the_title_attribute(); echo '">'; the_title('<h3 class="postTitle recipeTitle">', '</h3>'); echo '</a>';
-								the_post_thumbnail();
-							}
-						?>
+						<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+							<h3 class="postTitle<?php if(!in_category( 'myadventures' )) { echo ' recipeTitle'; }; ?>"><?php the_title(); ?></h3>
+						</a>
+						<?php if(in_category( 'myadventures')) { the_content(); } else { the_post_thumbnail(); }; ?>
 						<div class="test">
 							<?php echo '<a class="readMore" href="'; the_permalink(); echo '" title="'; the_title_attribute(); echo '">Read More...</a>'; ?>
 						</div>
