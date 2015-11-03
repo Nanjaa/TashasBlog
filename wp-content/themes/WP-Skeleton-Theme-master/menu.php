@@ -27,9 +27,9 @@
             <!-- The menu -->
             <div class="navigation">
                 <a class="menuLink" href="http://test.nanja.space/about/">About Me</a>|
-                <a class="menuLink" href="http://test.nanja.space/adventures/">My Adventures</a>|
-                <a class="menuLink" href="http://test.nanja.space/diy/">DIY</a>|
-                <a class="menuLink" href="http://test.nanja.space/recipes/">Recipes</a>
+                <a class="menuLink" href="http://test.nanja.space/category/myadventures/">My Adventures</a>|
+                <a class="menuLink" href="http://test.nanja.space/category/diy/">DIY</a>|
+                <a class="menuLink" href="http://test.nanja.space/category/recipes/">Recipes</a>
             </div>
         </div>
 

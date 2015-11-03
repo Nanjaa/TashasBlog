@@ -54,6 +54,7 @@ i {
 }
 .postTitle:hover {
 	background-color: #2d99a6;
+	opacity: 0.9;
 }
 .recipeTitle:hover {
 	margin-bottom: 0px;
