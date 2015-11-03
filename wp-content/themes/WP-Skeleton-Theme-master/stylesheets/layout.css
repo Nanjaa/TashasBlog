@@ -146,6 +146,18 @@ a {
 .readMore:hover {
 	color: #2d99a6 !important;
 }
+.fullpageTitle {
+	color: #35adbb;
+	padding-bottom: 10px;
+	margin-bottom: 25px;
+	border-bottom: 2px dotted #ddd;
+	text-align: center;
+}
+.ad {
+	border: 3px double #35adbb;
+	height: 100px;
+	text-align: center;
+}
 
 /* #Page Styles
 ================================================== */
