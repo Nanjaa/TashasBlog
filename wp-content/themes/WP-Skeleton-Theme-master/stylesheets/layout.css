@@ -158,6 +158,11 @@ a {
 	height: 100px;
 	text-align: center;
 }
+#recent-posts-2, #archives-2 {
+	border: 3px double #35adbb;
+	text-align: center;
+	margin-bottom: 25px;
+}
 
 /* #Page Styles
 ================================================== */
