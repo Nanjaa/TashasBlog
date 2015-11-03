@@ -83,8 +83,8 @@ h1 {
 	font-family: 'Fredericka the Great', cursive;
 	color: #2d99a6;
 }
-h2, h3 {
-	font-family: 'Open Sans Condensed', sans-serif;
+h2, h3, .h-1, .h-4 {
+	font-family: 'Open Sans Condensed', sans-serif !important;
 }
 a {
 	text-decoration: none;
@@ -117,6 +117,7 @@ a {
 }
 #recent-posts-2 h3, #archives-2 h3 {
 	color: #35adbb;
+	margin-bottom: 10px;
 }
 #recent-posts-2 {
 	margin-top: 25px;

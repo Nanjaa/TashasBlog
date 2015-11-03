@@ -8,15 +8,9 @@
 	while(have_posts()) : the_post();
 ?>
 
-		<h1><?php echo get_the_title(); ?></h1>
+		<h2><?php echo get_the_title(); ?></h2>
 		<?php the_content();
-		the_post_thumbnail('thumbnail');
-?>
-<div>
-	<h2>Recipe Name1</h2>
 
-</div>
-<?php
 	endwhile;
 	get_footer();
 ?>
