@@ -59,7 +59,7 @@ article {
 	width: 100%;
 	margin-top: 40px;
 	transition: all 1s linear;
-	transition: all 1s linear;
+	z-index: 999;
 }
 .postTitle:hover {
 	background-color: #2d99a6;
@@ -70,13 +70,23 @@ article {
 .title {
 	background-color: pink;
 	height: 400px;
+	overflow: hidden;
 }
 .preview {
 	background-color: #2d99a6;
 	color: white;
 	overflow: hidden;
-	text-align: justify;
-	padding: 20px;
+	text-align: center;
+	padding: 100px 75px 75px;
+	font-size: 50px;
+	height: 400px;
+	position: absolute;
+	line-height: 1;
+	display: none;
+}
+.hoverPreview {
+	margin-top: -500px;
+	transition: all 25s linear;
 }
 .circledImage {
 	border-radius: 50%;
@@ -93,6 +103,10 @@ h1 {
 }
 h2, h3, .h-1, .h-4 {
 	font-family: 'Open Sans Condensed', sans-serif !important;
+}
+.preview p {
+	font-family: 'Open Sans Condensed', sans-serif !important;
+	font-style: italic;
 }
 a {
 	text-decoration: none;
