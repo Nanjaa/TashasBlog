@@ -58,19 +58,21 @@ article {
 	padding: 15px;
 	width: 100%;
 	margin-top: 40px;
-	transition: all 1s linear;
 	z-index: 999;
+	transition: all 0.5s linear;
 }
-.postTitle:hover {
+.postTitleTransition {
 	background-color: #2d99a6;
 	opacity: 1;
 	padding-top: 40px;
 	margin-top: 0px;
+	transition: all 0.5s linear;
 }
 .title {
 	background-color: pink;
 	height: 400px;
 	overflow: hidden;
+	cursor: pointer;
 }
 .preview {
 	background-color: #2d99a6;
@@ -80,6 +82,7 @@ article {
 	padding: 100px 75px 75px;
 	font-size: 50px;
 	height: 400px;
+	width: 100%;
 	position: absolute;
 	line-height: 1;
 	display: none;

@@ -13,15 +13,15 @@
 												
 				<article id="post-<?php the_ID(); ?>">
 					<p><?php echo get_the_date(); ?></p>
-					<div class="title">
-						<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+					<a href="<?php the_permalink(); ?>">
+						<div class="title">
 							<h3 class="postTitle<?php if(!in_category( 'myadventures' )) { echo ' recipeTitle'; }; ?>"><?php the_title(); ?></h3>
-						</a>
-						<div class="preview">
-							<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							<div class="preview">
+								<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+							<?php if(in_category( 'myadventures')) { the_content(); } else { the_post_thumbnail(); }; ?>
 						</div>
-						<?php if(in_category( 'myadventures')) { the_content(); } else { the_post_thumbnail(); }; ?>
-					</div>
+					</a>
 					<div class="test">
 						<?php echo '<a class="readMore" href="'; the_permalink(); echo '" title="'; the_title_attribute(); echo '">Read More...</a>'; ?>
 					</div>
