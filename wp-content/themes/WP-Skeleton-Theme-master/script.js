@@ -4,10 +4,10 @@ $j(document).ready(function() {
 
 	// Hover over the post titles, and have the 
 	$j('.postTitle').on('mouseenter', function() {
-		$j(this).parent().next().fadeIn(1000);
+		$j(this).parent().next().fadeIn(500);
 	});
 	$j('.postTitle').on('mouseout', function() {
-		$j('.preview').fadeOut(1000);
+		$j('.preview').fadeOut(500);
 	});
 
 });

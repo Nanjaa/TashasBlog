@@ -86,7 +86,7 @@ article {
 }
 .hoverPreview {
 	margin-top: -500px;
-	transition: all 25s linear;
+	transition: all 1s linear;
 }
 .circledImage {
 	border-radius: 50%;
