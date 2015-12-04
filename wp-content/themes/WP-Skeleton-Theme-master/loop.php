@@ -17,7 +17,7 @@
 						<div class="title">
 							<h3 class="postTitle<?php if(!in_category( 'myadventures' )) { echo ' recipeTitle'; }; ?>"><?php the_title(); ?></h3>
 							<div class="preview">
-								<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<p><?php $previewText = get_field('preview_text'); echo $previewText; ?></p>
 							</div>
 							<?php if(in_category( 'myadventures')) { the_content(); } else { the_post_thumbnail(); }; ?>
 						</div>
