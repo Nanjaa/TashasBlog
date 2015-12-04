@@ -14,5 +14,6 @@
 	endwhile; 
 ?>
 <?php
+	get_template_part('sidebar', 'index');
 	get_footer();
 ?>
