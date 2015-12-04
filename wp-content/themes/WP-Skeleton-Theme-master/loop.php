@@ -12,14 +12,14 @@
 				<?php while ( have_posts() ) : the_post(); ?> <!--  the Loop -->
 												
 				<article id="post-<?php the_ID(); ?>">
-					<p><?php echo get_the_date(); ?></p>
-					<a href="<?php the_permalink(); ?>">
-						<div class="title">
-							<h3 class="postTitle<?php if(!in_category( 'myadventures' )) { echo ' recipeTitle'; }; ?>"><?php the_title(); ?></h3>
-							<div class="preview">
+					<p><?php echo get_the_date(); ?></p> <!-- The Date -->
+					<a href="<?php the_permalink(); ?>"> <!-- The square post preview -->
+						<?php $coverPhoto = get_field('cover_photo'); ?>
+						<div class="title" style="background-image:url(<?php echo $coverPhoto ?>)">
+							<h3 class="postTitle<?php if(!in_category( 'myadventures' )) { echo ' recipeTitle'; }; ?>"><?php the_title(); ?></h3> <!-- post title -->
+							<div class="preview"> <!-- the preview text -->
 								<p><?php $previewText = get_field('preview_text'); echo $previewText; ?></p>
 							</div>
-							<?php if(in_category( 'myadventures')) { the_content(); } else { the_post_thumbnail(); }; ?>
 						</div>
 					</a>
 					<div class="test">
