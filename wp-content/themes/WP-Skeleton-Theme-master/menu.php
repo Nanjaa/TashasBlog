@@ -26,6 +26,7 @@
             </a>
             <!-- The menu -->
             <div class="navigation">
+                <a class="menuLink" href="<?php echo home_url(); ?>">Home</a>|
                 <a class="menuLink" href="http://test.nanja.space/about/">About Me</a>|
                 <a class="menuLink" href="http://test.nanja.space/category/myadventures/">My Adventures</a>|
                 <a class="menuLink" href="http://test.nanja.space/category/diy/">DIY</a>|
