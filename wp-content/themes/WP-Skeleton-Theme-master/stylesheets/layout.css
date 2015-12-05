@@ -73,6 +73,11 @@ article {
 	height: 400px;
 	overflow: hidden;
 	cursor: pointer;
+	background-size: cover;
+	background-position: center;
+}
+.title.bg {
+	width: 100%;
 }
 .preview {
 	background-color: #2d99a6;
