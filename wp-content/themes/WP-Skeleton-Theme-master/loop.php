@@ -36,8 +36,9 @@
 
 					<nav id="nav-below">
 						<hr>
-						<div class="nav-previous"><?php next_posts_link(); ?></div>
-						<div class="nav-next"><?php previous_posts_link(); ?></div>
+						<div class="nav-previous inline"><?php if(get_previous_posts_link()) { previous_posts_link('Previous Page'); } else { echo '<p class="pageUnavailable">Previous Page</p>'; } ?></div>
+						<p class="nav-current inline"><?php global $paged; echo $paged; ?></p>
+						<div class="nav-next inline"><?php if(get_next_posts_link()) { next_posts_link('Next Page'); } else { echo '<p class="pageUnavailable">Next Page</p>'; } ?></div>
 					</nav><!-- #nav-below -->
 					
 				<?php endif; ?>
