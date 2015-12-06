@@ -193,7 +193,7 @@ a {
 	text-align: center;
 	margin-bottom: 25px;
 }
-.nav-previous, .nav-next {
+.nav-previous a, .nav-next a {
 	color: #35adbb !important;
 }
 .nav-previous {
