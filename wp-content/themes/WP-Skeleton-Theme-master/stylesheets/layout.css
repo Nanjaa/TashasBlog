@@ -34,6 +34,9 @@ article {
 	margin-bottom: 25px;
 	overflow: hidden;
 }
+article p {
+	font-weight: bold;
+}
 .center {
 	text-align: center;
 }
@@ -54,7 +57,7 @@ article {
 .postTitle {
 	position: absolute;
 	background-color: #35adbb;
-	opacity: 0.7;
+	opacity: 0.85;
 	padding: 15px;
 	width: 100%;
 	margin-top: 40px;
@@ -172,6 +175,8 @@ a {
 	color: #35adbb !important;
 	text-align: right;
 	margin-bottom: 25px;
+	font-size: 18px;
+	font-style: italic;
 }
 .readMore:hover {
 	color: #2d99a6 !important;
@@ -207,6 +212,12 @@ a {
 }
 .pageUnavailable {
 	color: #ddd !important;
+}
+#shr_canvas2 {
+	border-top: 2px dotted #ddd;
+}
+.commentsTitle {
+	color: #35adbb;
 }
 
 /* #Page Styles
