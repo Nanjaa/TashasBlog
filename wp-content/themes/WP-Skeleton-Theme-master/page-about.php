@@ -2,17 +2,29 @@
 	// header
 	get_header();
 	get_template_part('menu', 'index');
-	// profile pic
-	$image = get_field('profile_pic');
-	if( !empty($image) ): ?>
-		<img class="circledImage" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-<?php endif; ?>
-<?php
-	// content
-	while ( have_posts() ) : the_post();
-		the_content();
-	endwhile; 
-?>
+	?>
+
+	<div class="content">
+		<div class="two-thirds column alpha">
+			<div class="main"> 
+				<?php 
+				// profile pic
+				$image = get_field('profile_pic');
+				if( !empty($image) ): ?>
+					<img class="circledImage" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+			<?php endif; ?>
+			<?php
+				// this is the var for the headline 
+				$headline = get_field('headline');
+				// content
+				while ( have_posts() ) : the_post();
+					echo '<h2 class="aboutHeadline">'; echo $headline; echo '</h2>';
+					the_content();
+				endwhile; 
+			?>
+			</div>
+		</div>
+	</div>
 <?php
 	get_template_part('sidebar', 'index');
 	get_footer();
