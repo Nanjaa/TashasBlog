@@ -8,7 +8,7 @@
 		<div class="sidebar"> <!--  the Sidebar -->
 			<!-- Social Media -->
 			<div class="social">
-				<p id="test">Keep in Touch</p>
+				<p id="test"><?php echo get_field('social_media_title', 5); ?></p>
 				<i class="socialIcon icon-facebook"></i>
 				<i class="socialIcon icon-twitter"></i>
 				<i class="socialIcon icon-instagram"></i>
@@ -18,7 +18,7 @@
 			<div class="clearfix">
 				<form method="get" id="searchform" action="<?php bloginfo('home'); ?>">
 					<div>
-						<input type="text" value="<?php echo wp_specialchars($s, 1); ?>" name="s" id="s" placeholder="Search Tasha's Blog" />
+						<input type="text" value="<?php echo wp_specialchars($s, 1); ?>" name="s" id="s" placeholder="<?php echo get_field('search_bar_text', 5); ?>" />
 						<input type="submit" id="searchsubmit" value="Search" class="btn" />
 					</div>
 				</form>

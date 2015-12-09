@@ -116,6 +116,9 @@ h1 {
 h2, h3, .h-1, .h-4 {
 	font-family: 'Open Sans Condensed', sans-serif !important;
 }
+h2 {
+	color: #35adbb;
+}
 .preview p {
 	font-family: 'Open Sans Condensed', sans-serif !important;
 	font-style: italic;
