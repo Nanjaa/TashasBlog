@@ -8,9 +8,18 @@
 	<div class="content">
 		<div class="two-thirds column alpha">
 			<div class="main"> 
-												
+				<?php $count = 0; ?>
 				<?php while ( have_posts() ) : the_post(); ?> <!--  the Loop -->
-												
+				<?php if(is_category()) {
+					if($count === 0) { 
+						echo '<h2>'; echo single_cat_title('', true); echo '</h2>';
+					}
+				}
+				$count = $count + 1;
+				?>
+
+				<h1><?php  ?></h2>
+
 				<article id="post-<?php the_ID(); ?>">
 					<p><?php echo get_the_date(); ?></p> <!-- The Date -->
 					<a href="<?php the_permalink(); ?>"> <!-- The square post preview -->
