@@ -8,15 +8,15 @@
 	<div class="content">
 		<div class="two-thirds column alpha">
 			<div class="main"> 
-				<?php $count = 0; ?>
-				<?php while ( have_posts() ) : the_post(); ?> <!--  the Loop -->
+
 				<?php if(is_category()) {
-					if($count === 0) { 
-						echo '<h2 class="categoryTitle">'; echo single_cat_title('', true); echo '</h2>';
-					}
+					echo '<h2 class="categoryTitle">'; echo single_cat_title('', true); echo '</h2>';
 				}
-				$count = $count + 1;
-				?>
+				else if(is_archive()) {
+					echo '<h2 class="categoryTitle">'; echo the_archive_title(); echo '</h2>';	
+				}
+
+				while ( have_posts() ) : the_post(); ?> <!--  the Loop -->
 
 				<h1><?php  ?></h2>
 
