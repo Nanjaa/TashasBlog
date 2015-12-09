@@ -12,7 +12,7 @@
 				<?php while ( have_posts() ) : the_post(); ?> <!--  the Loop -->
 				<?php if(is_category()) {
 					if($count === 0) { 
-						echo '<h2>'; echo single_cat_title('', true); echo '</h2>';
+						echo '<h2 class="categoryTitle">'; echo single_cat_title('', true); echo '</h2>';
 					}
 				}
 				$count = $count + 1;
