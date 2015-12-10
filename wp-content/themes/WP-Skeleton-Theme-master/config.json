@@ -7,28 +7,28 @@
   "ascent": 850,
   "glyphs": [
     {
-      "uid": "ccf7ed45e7f05a89376f38abaa9d7d13",
-      "css": "twitter",
-      "code": 59394,
-      "src": "mfglabs"
-    },
-    {
-      "uid": "96aafeab29734d1510805687f7695f8f",
-      "css": "facebook",
-      "code": 59395,
-      "src": "mfglabs"
-    },
-    {
-      "uid": "0a16125788558bcc5d70ae3f10effce5",
-      "css": "instagram",
+      "uid": "bf882b30900da12fca090d9796bc3030",
+      "css": "mail",
       "code": 59393,
-      "src": "mfglabs"
+      "src": "fontawesome"
     },
     {
-      "uid": "7cb7e246fd23672429db603c0077dc79",
-      "css": "mail-circled",
-      "code": 59396,
-      "src": "elusive"
+      "uid": "8e04c98c8f5ca0a035776e3001ad2638",
+      "css": "facebook",
+      "code": 59394,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "4c1ef492f1d2c39a2250ae457cee2a6e",
+      "css": "instagram",
+      "code": 59392,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "627abcdb627cb1789e009c08e2678ef9",
+      "css": "twitter",
+      "code": 59395,
+      "src": "fontawesome"
     }
   ]
 }

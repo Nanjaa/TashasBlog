@@ -96,3 +96,7 @@ add_action('wp_enqueue_scripts', 'Wps_load_styles');
 
 } // endif
 
+// max image size
+
+add_image_size('tn650', 650);
+add_image_size('tn300', 300);

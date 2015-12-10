@@ -10,9 +10,11 @@
 				<?php 
 				// profile pic
 				$image = get_field('profile_pic');
+				$size = 'tn300';
+				$image_sized = $image['sizes'][$size];
 				if( !empty($image) ): ?>
-					<img class="circledImage" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-			<?php endif; ?>
+					<img class="circledImage" src="<?php echo $image_sized; ?>" alt="<?php echo $image['alt']; ?>" />
+				<?php endif; ?>
 			<?php
 				// this is the var for the headline 
 				$headline = get_field('headline');

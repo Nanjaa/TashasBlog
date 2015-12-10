@@ -23,8 +23,12 @@
 				<article id="post-<?php the_ID(); ?>">
 					<p><?php echo get_the_date(); ?></p> <!-- The Date -->
 					<a href="<?php the_permalink(); ?>"> <!-- The square post preview -->
-						<?php $coverPhoto = get_field('cover_photo'); ?>
-						<div class="title" style="background-image:url(<?php echo $coverPhoto ?>)">
+						<?php 
+							$coverPhoto = get_field('cover_photo');
+							$size = 'tn650';
+							$image_sized = $coverPhoto['sizes'][$size];
+						?>
+						<div class="title" style="background-image:url(<?php echo $image_sized; ?>)">
 							<h3 class="postTitle<?php if(!in_category( 'myadventures' )) { echo ' recipeTitle'; }; ?>"><?php the_title(); ?></h3> <!-- post title -->
 							<div class="preview"> <!-- the preview text -->
 								<p><?php $previewText = get_field('preview_text'); echo $previewText; ?></p>

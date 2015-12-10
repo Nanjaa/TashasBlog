@@ -9,10 +9,10 @@
 			<!-- Social Media -->
 			<div class="social">
 				<p id="test"><?php echo get_field('social_media_title', 5); ?></p>
-				<i class="socialIcon icon-facebook"></i>
-				<i class="socialIcon icon-twitter"></i>
-				<i class="socialIcon icon-instagram"></i>
-				<i class="socialIcon icon-mail-circled"></i>
+				<a class="socialIcon" href="https://www.facebook.com/tashaforcier?fref=ts"><i class="icon-facebook"></i></a>
+				<a class="socialIcon" href="https://twitter.com/Tashaforcier"><i class="icon-twitter"></i></a>
+				<a class="socialIcon" href="https://www.instagram.com/tashaforcier/"><i class="icon-instagram"></i></a>
+				<a class="socialIcon" href="#"><i class="icon-mail"></i></a>
 			</div>
 			<!-- Search Bar -->
 			<div class="clearfix">

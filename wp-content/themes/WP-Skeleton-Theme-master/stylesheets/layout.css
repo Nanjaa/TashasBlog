@@ -38,6 +38,10 @@ article {
 article p {
 	font-weight: bold;
 }
+html, html a {
+	-webkit-font-smoothing: antialised !important;
+	text-shadow: 1px 1px 1px rgba(0,0,0, 0.004);
+}
 .center {
 	text-align: center;
 }
@@ -141,12 +145,25 @@ a {
 	color: #35adbb;
 }
 .socialIcon {
-	color: #2d99a6;
-	font-size: 35px;
+	color: white;
+	font-size: 25px;
 	cursor: pointer;
+	background-color: #2d99a6;
+	border-radius: 50%;
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	position: relative;
 }
 .socialIcon:hover {
-	color: #35adbb;
+	background-color: #35adbb;
+}
+.socialIcon i {
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 #search-2 {
 	padding-bottom: 5;
@@ -172,8 +189,8 @@ a {
 	cursor: pointer;
 	width: 25%;
 }
-#searchsubmit {
-	background-color: 
+#searchsubmit:hover {
+	background-color: #35adbb;
 }
 .test, .readMore {
 	color: #35adbb !important;
