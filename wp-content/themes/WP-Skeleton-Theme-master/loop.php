@@ -35,7 +35,7 @@
 							</div>
 						</div>
 					</a>
-					<div class="test">
+					<div class="readMore">
 						<?php echo '<a class="readMore" href="'; the_permalink(); echo '" title="'; the_title_attribute(); echo '">Read More...</a>'; ?>
 					</div>
 				</article>

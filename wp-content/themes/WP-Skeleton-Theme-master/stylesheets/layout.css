@@ -133,6 +133,7 @@ h2 {
 .preview p {
 	font-family: 'Open Sans Condensed', sans-serif !important;
 	font-style: italic;
+	padding: 0px 25px;
 }
 a {
 	text-decoration: none;
@@ -199,7 +200,7 @@ a {
 #searchsubmit:hover {
 	background-color: #35adbb;
 }
-.test, .readMore {
+.readMore {
 	color: #35adbb !important;
 	text-align: right;
 	margin-bottom: 25px;
