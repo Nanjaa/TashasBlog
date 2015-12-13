@@ -17,10 +17,10 @@
 			</div>
 			<div class="social">
 				<p id="test"><?php echo get_field('social_media_title', 5); ?></p>
-				<a class="socialIcon" href="https://www.facebook.com/tashaforcier?fref=ts"><i class="icon-facebook"></i></a>
-				<a class="socialIcon" href="https://twitter.com/Tashaforcier"><i class="icon-twitter"></i></a>
-				<a class="socialIcon" href="https://www.instagram.com/tashaforcier/"><i class="icon-instagram"></i></a>
-				<a class="socialIcon" href="#"><i class="icon-mail"></i></a>
+				<a class="socialIcon" target="blank" href="https://www.facebook.com/tashaforcier?fref=ts"><i class="icon-facebook"></i></a>
+				<a class="socialIcon" target="blank" href="https://twitter.com/Tashaforcier"><i class="icon-twitter"></i></a>
+				<a class="socialIcon" target="blank" href="https://www.instagram.com/tashaforcier/"><i class="icon-instagram"></i></a>
+				<a class="socialIcon" target="blank" href="#"><i class="icon-mail"></i></a>
 			</div>
 		</div>
 	</div>
