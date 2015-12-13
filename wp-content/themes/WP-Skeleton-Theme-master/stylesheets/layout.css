@@ -31,12 +31,14 @@ i {
 	font-family: 'fontello';
 }
 article {
-	border-bottom: 2px dotted #ddd;
 	margin-bottom: 25px;
 	overflow: hidden;
 }
 article p {
 	font-weight: bold;
+}
+.articleBorder {
+	border-bottom: 2px dotted #ddd;
 }
 html, html a {
 	-webkit-font-smoothing: antialised !important;

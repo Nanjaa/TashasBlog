@@ -8,8 +8,8 @@
 	<div class="content">
 		<div class="two-thirds column alpha">
 			<div class="main"> 
-
-				<?php if(is_category()) {
+				<?php $post_count = 0;
+				if(is_category()) {
 					echo '<h2 class="categoryTitle">'; echo single_cat_title('', true); echo '</h2>';
 				}
 				else if(is_archive()) {
@@ -18,9 +18,11 @@
 
 				while ( have_posts() ) : the_post(); ?> <!--  the Loop -->
 
-				<h1><?php  ?></h2>
-
-				<article id="post-<?php the_ID(); ?>">
+				<?php 
+					$post_count = $post_count + 1;
+				?>
+				
+				<article id="post-<?php the_ID(); ?>" class="<?php if($post_count !== $posts_per_page) { echo 'articleBorder'; } ?>">
 					<p><?php echo get_the_date(); ?></p> <!-- The Date -->
 					<a href="<?php the_permalink(); ?>"> <!-- The square post preview -->
 						<?php 
@@ -42,24 +44,18 @@
 												
 			
 				<?php endwhile; ?><!--  End the Loop -->
-
-				<?php /* Display navigation to next/previous pages when applicable */ ?>
-	
-				<?php if (  $wp_query->max_num_pages > 1 ) : ?>
-
-					<nav id="nav-below">
-						<hr>
-						<div class="nav-previous inline"><?php if(get_previous_posts_link()) { previous_posts_link('Previous Page'); } else { echo '<p class="pageUnavailable">Previous Page</p>'; } ?></div>
-						<p class="nav-current inline"><?php global $paged; if($paged !== 0) { echo $paged; } else { echo '1'; } ?></p>
-						<div class="nav-next inline"><?php if(get_next_posts_link()) { next_posts_link('Next Page'); } else { echo '<p class="pageUnavailable">Next Page</p>'; } ?></div>
-					</nav><!-- #nav-below -->
-					
-				<?php endif; ?>
-					
-				<?php /* Only load comments on single post/pages*/ ?>
-				<?php if(is_page() || is_single()) : comments_template( '', true ); endif; ?>
-		
 			</div>  <!-- End Main -->
+			<!-- Display navigation to next/previous pages when applicable -->
+			<?php if (  $wp_query->max_num_pages > 1 ) : ?>
+
+				<nav id="nav-below">
+					<hr>
+					<div class="nav-previous inline"><?php if(get_previous_posts_link()) { previous_posts_link('Previous Page'); } else { echo '<p class="pageUnavailable">Previous Page</p>'; } ?></div>
+					<p class="nav-current inline"><?php global $paged; if($paged !== 0) { echo $paged; } else { echo '1'; } ?></p>
+					<div class="nav-next inline"><?php if(get_next_posts_link()) { next_posts_link('Next Page'); } else { echo '<p class="pageUnavailable">Next Page</p>'; } ?></div>
+				</nav><!-- #nav-below -->
+				
+			<?php endif; ?>
 		</div>  <!-- End two-thirds column -->
 	</div><!-- End Content -->
 		
