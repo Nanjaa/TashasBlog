@@ -21,8 +21,8 @@
 				<?php 
 					$post_count = $post_count + 1;
 				?>
-				
-				<article id="post-<?php the_ID(); ?>" class="<?php if($post_count !== $posts_per_page) { echo 'articleBorder'; } ?>">
+
+				<article id="post-<?php the_ID(); ?>" class="<?php if($post_count !== sizeof($posts)) { echo 'articleBorder'; } ?>">
 					<p><?php echo get_the_date(); ?></p> <!-- The Date -->
 					<a href="<?php the_permalink(); ?>"> <!-- The square post preview -->
 						<?php 
