@@ -24,7 +24,14 @@
             </a>
             <nav class="inline">
                 <a href="<?php echo home_url(); ?>">
-                    <h1><?php echo get_field('website_name/title', 5); ?></h1>
+                    <?php if(is_home()) {
+                        echo '<h1 class="siteTitle">'.get_field('website_name/title', 5).'</h1>'; 
+                    }
+                    else {
+                        echo '<span class="siteTitle">'.get_field('website_name/title', 5).'</span>';
+                    }
+                ?>
+                    
                 </a>
                 <!-- The menu -->
                 <div class="navigation">

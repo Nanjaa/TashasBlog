@@ -20,7 +20,7 @@
 				$headline = get_field('headline');
 				// content
 				while ( have_posts() ) : the_post();
-					echo '<h2 class="aboutHeadline">'; echo $headline; echo '</h2>';
+					echo '<h1 class="aboutHeadline">'; echo $headline; echo '</h1>';
 					the_content();
 				endwhile; 
 			?>

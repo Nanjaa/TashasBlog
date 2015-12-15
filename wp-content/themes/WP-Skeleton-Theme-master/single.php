@@ -13,7 +13,7 @@
 				<?php							
 				while(have_posts()) : the_post();
 				?>
-					<h2 class="fullpageTitle"><?php echo get_the_title(); ?></h2>
+					<h1 class="fullpageTitle"><?php echo get_the_title(); ?></h1>
 					<?php the_content();
 					?>
 

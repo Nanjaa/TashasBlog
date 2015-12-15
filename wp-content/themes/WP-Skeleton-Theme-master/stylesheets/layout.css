@@ -122,14 +122,20 @@ html, html a {
 #side {
 	float: right;
 }
-h1 {
-	font-family: 'Fredericka the Great', cursive;
+.siteTitle {
+	font-family: 'Fredericka the Great', cursive !important;
 	color: #2d99a6;
+	font-size: 50px;
+	margin-left: 10px;
+	line-height: 50px;
 }
-h2, h3, .h-1, .h-4 {
+h1 {
+	font-size: 40px;
+}
+h1, h2, h3, .h-1, .h-4 {
 	font-family: 'Open Sans Condensed', sans-serif !important;
 }
-h2 {
+h1, h2 {
 	color: #35adbb;
 }
 .preview p {
@@ -288,7 +294,7 @@ a {
 		.menuContainer img {
 			transform: translateY(-10%)
 		}
-		.inline h1 {
+		.center nav {
 			text-align: left;
 		}
 		.preview {

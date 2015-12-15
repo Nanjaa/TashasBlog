@@ -10,10 +10,10 @@
 			<div class="main"> 
 				<?php $post_count = 0;
 				if(is_category()) {
-					echo '<h2 class="categoryTitle">'; echo single_cat_title('', true); echo '</h2>';
+					echo '<h1 class="categoryTitle">'; echo single_cat_title('', true); echo '</h1>';
 				}
 				else if(is_archive()) {
-					echo '<h2 class="categoryTitle">'; echo the_archive_title(); echo '</h2>';	
+					echo '<h1 class="categoryTitle">'; echo the_archive_title(); echo '</h1>';	
 				}
 
 				while ( have_posts() ) : the_post(); ?> <!--  the Loop -->
