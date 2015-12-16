@@ -16,7 +16,7 @@
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if gte IE 9 ]><html class="no-js ie9" lang="en"> <![endif]-->
 
-    <title><?php wp_title('|',true,'right'); ?><?php echo get_field('website_name/title', 5); ?></title>
+    <title><?php echo 'Demo | '; wp_title('|',true,'right'); ?><?php echo get_field('website_name/title', 5); ?></title>
 
 	<meta name="description" content="<?php bloginfo('description'); ?>" />
 
