@@ -115,8 +115,6 @@ html, html a {
 }
 .circledImage {
 	border-radius: 50%;
-	float: left;
-	margin: 15px;
 	width: 50%;
 }
 #side {
@@ -170,6 +168,8 @@ a {
 	height: 40px;
 	width: 40px;
 	position: relative;
+	margin-left: 3px;
+	margin-right: 3px;
 }
 .socialIcon:hover {
 	background-color: #35adbb;
@@ -195,12 +195,12 @@ a {
 #s, #searchsubmit {
 	float: left;
 	box-sizing: border-box;
+	height: 30px;
 }
 #searchsubmit {
 	background-color: #2d99a6;
 	border: none;
 	color: white;
-	height: 30px;
 	border-radius: 0 2px 2px 0;
 	cursor: pointer;
 	width: 25%;
@@ -288,7 +288,16 @@ a {
 	@media only screen and (min-width: 768px) and (max-width: 959px) {}
 
 	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {}
+	@media only screen and (max-width: 767px) {
+		.navigation {
+			margin: 10px;
+			font-size: 18px;
+			line-height: 30px;
+		}
+		.aboutTitle {
+			text-align: center;
+		}
+	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 	@media only screen and (min-width: 480px) and (max-width: 767px) {}
@@ -308,6 +317,10 @@ a {
 		}
 		.preview {
 			font-size: 50px;
+		}
+		.circledImage {
+			float: left;
+			margin: 15px;
 		}
 	}
 
