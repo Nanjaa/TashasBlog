@@ -263,11 +263,11 @@ article p {
 .nav-previous {
 	float: left;
 }
-#nav-below {
-	text-align: center;
-}
 .nav-next {
 	float: right;
+}
+#nav-below {
+	text-align: center;
 }
 #shr_canvas2 {
 	border-top: 2px dotted #ddd;
@@ -307,6 +307,9 @@ article p {
 		.aboutTitle {
 			text-align: center;
 		}
+		.nav-next, .nav-previous {
+			width: 100%;
+		}
 	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -331,6 +334,18 @@ article p {
 		.circledImage {
 			float: left;
 			margin: 15px;
+		}
+		.nav-previous a {
+			float: left;
+		}
+		.nav-next a {
+			float: right;
+		}
+		.nav-previous {
+			text-align: left;
+		}
+		.nav-next {
+			text-align: right;
 		}
 	}
 
