@@ -265,6 +265,15 @@ a {
 	margin-bottom: 15px;
 	border-bottom: 2px dotted #35adbb;
 }
+/* The Recipe Card */
+#zlrecipe-container {
+	background-color: #f4f4f4;
+	border: 3px double #35adbb;
+	padding: 25px;
+}
+#zlrecipe-container .heading-four, #zlrecipe-container .h-4 {
+	border-bottom: 2px solid #35adbb;
+}
 
 /* #Page Styles
 ================================================== */
