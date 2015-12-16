@@ -17,6 +17,7 @@
 /* #Site Styles
 ================================================== */
 
+/* universal styles */
 body {
 	background-color: #fefefe;
 	padding: 0px 15px;
@@ -30,26 +31,41 @@ p, .menuLink {
 i {
 	font-family: 'fontello';
 }
-article {
-	margin-bottom: 25px;
-	overflow: hidden;
-}
-article p {
-	font-weight: bold;
-}
-.articleBorder {
-	border-bottom: 2px dotted #ddd;
-}
 html, html a {
 	-webkit-font-smoothing: antialised !important;
 	text-shadow: 1px 1px 1px rgba(0,0,0, 0.004);
 }
+h1 {
+	font-size: 40px;
+}
+h1, h2, h3, .h-1, .h-4 {
+	font-family: 'Open Sans Condensed', sans-serif !important;
+}
+h1, h2 {
+	color: #35adbb;
+}
 .center {
 	text-align: center;
 }
-.main {
-	position: relative;
+.floatLeft {
+	float: left;
 }
+.verticallyCenter {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+a {
+	text-decoration: none;
+}
+.inline {
+	display: inline-block;
+}
+.pageUnavailable {
+	color: #ddd !important;
+}
+
+/****************************** Menu *****************************/
 .menuLink {
 	margin-left: 10px;
 	margin-right: 10px;
@@ -60,13 +76,19 @@ html, html a {
 .navigation {
 	text-align: center;
 }
-.floatLeft {
-	float: left;
+/***************************** Main Loop ***************************/
+.main {
+	position: relative;
 }
-.verticallyCenter {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+article {
+	margin-bottom: 25px;
+	overflow: hidden;
+}
+article p {
+	font-weight: bold;
+}
+.articleBorder {
+	border-bottom: 2px dotted #ddd;
 }
 .postTitle {
 	position: absolute;
@@ -113,10 +135,38 @@ html, html a {
 	margin-top: -500px;
 	transition: all 1s linear;
 }
+.preview p {
+	font-family: 'Open Sans Condensed', sans-serif !important;
+	font-style: italic;
+	padding: 0px 25px;
+}
+.readMore {
+	color: #35adbb !important;
+	text-align: right;
+	margin-bottom: 25px;
+	font-size: 18px;
+	font-style: italic;
+}
+.readMore:hover {
+	color: #2d99a6 !important;
+}
+.categoryTitle {
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: 2px dotted #35adbb;
+}
+
+/************************ About Me ****************************/
 .circledImage {
 	border-radius: 50%;
 	width: 50%;
 }
+.aboutHeadline {
+	color: #35adbb;
+	margin-bottom: 20px;
+}
+
+/************************* Sidebar/Footer ****************************/
 #side {
 	float: right;
 }
@@ -126,26 +176,6 @@ html, html a {
 	font-size: 50px;
 	margin-left: 10px;
 	line-height: 50px;
-}
-h1 {
-	font-size: 40px;
-}
-h1, h2, h3, .h-1, .h-4 {
-	font-family: 'Open Sans Condensed', sans-serif !important;
-}
-h1, h2 {
-	color: #35adbb;
-}
-.preview p {
-	font-family: 'Open Sans Condensed', sans-serif !important;
-	font-style: italic;
-	padding: 0px 25px;
-}
-a {
-	text-decoration: none;
-}
-.inline {
-	display: inline-block;
 }
 .social {
 	text-align: center;
@@ -208,26 +238,18 @@ a {
 #searchsubmit:hover {
 	background-color: #35adbb;
 }
-.readMore {
-	color: #35adbb !important;
-	text-align: right;
-	margin-bottom: 25px;
-	font-size: 18px;
-	font-style: italic;
+.ad {
+	border: 3px double #35adbb;
+	height: 100px;
+	text-align: center;
 }
-.readMore:hover {
-	color: #2d99a6 !important;
-}
+
+/***************************** Single Page *****************************/
 .fullpageTitle {
 	color: #35adbb;
 	padding-bottom: 10px;
 	margin-bottom: 25px;
 	border-bottom: 2px dotted #ddd;
-	text-align: center;
-}
-.ad {
-	border: 3px double #35adbb;
-	height: 100px;
 	text-align: center;
 }
 #recent-posts-2, #archives-2 {
@@ -247,23 +269,11 @@ a {
 .nav-next {
 	float: right;
 }
-.pageUnavailable {
-	color: #ddd !important;
-}
 #shr_canvas2 {
 	border-top: 2px dotted #ddd;
 }
 .commentsTitle {
 	color: #35adbb;
-}
-.aboutHeadline {
-	color: #35adbb;
-	margin-bottom: 20px;
-}
-.categoryTitle {
-	padding-bottom: 15px;
-	margin-bottom: 15px;
-	border-bottom: 2px dotted #35adbb;
 }
 /* The Recipe Card */
 #zlrecipe-container {
